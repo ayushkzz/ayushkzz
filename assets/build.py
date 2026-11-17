@@ -238,16 +238,23 @@ def about(t, path):
         [("    def ", c("kw")), ("__init__", c("fn")), ("(self):", c("muted"))],
         [("        self.", c("muted")), ("role", c("attr")), ("      = ", c("muted")), ('"Developer & lifelong learner"', c("str"))],
         [("        self.", c("muted")), ("languages", c("attr")), (" = ", c("muted")), ('["Python", "Java", "JavaScript"]', c("str"))],
-        [("        self.", c("muted")), ("building", c("attr")), ("  = ", c("muted")), ('"AI tools for everyday problems"', c("str"))],
+        [("        self.", c("muted")), ("building", c("attr")), ("  = ", c("muted")), ('"AI tools and resilient backends"', c("str"))],
+        [("        self.", c("muted")), ("proud_of", c("attr")), ("  = ", c("muted")), ('"0 double bookings at 500 req/s"', c("str"))],
         [("        self.", c("muted")), ("learning", c("attr")), ("  = ", c("muted")), ('["LLM apps", "MLOps", "Cloud"]', c("str"))],
         [],
         [("    def ", c("kw")), ("say_hi", c("fn")), ("(self):", c("muted"))],
         [("        print", c("fn")), ("(", c("muted")), ('"Thanks for stopping by!"', c("str")), (")", c("muted"))],
+        [],
+        [("me", c("attr")), (" = ", c("muted")), ("AyushKumar", c("cls")), ("()", c("muted"))],
+        [("me.", c("muted")), ("say_hi", c("fn")), ("()", c("muted"))],
     ]
     focus = [
         ("AI / Machine Learning", t["a1"], "XGBoost forecasting, NLP pipelines, CNNs and LLM-powered apps with Gemini."),
-        ("Full-Stack Web", t["a2"], "React front ends backed by Flask, FastAPI or Node and MongoDB."),
-        ("DevOps & CI/CD", t["a3"], "Jenkins pipelines, Docker images and zero-downtime Nginx deploys."),
+        ("Backend & Distributed Systems", t["a2"],
+         "Event-driven services on Spring Boot, Kafka, Redis and PostgreSQL, load-tested with k6."),
+        ("Full-Stack Web", t["a3"], "React front ends backed by Spring Boot, Flask, FastAPI or Node."),
+        ("DevOps & CI/CD", "#f59e0b",
+         "Jenkins and GitHub Actions pipelines, Docker, zero-downtime deploys and Grafana monitoring."),
     ]
     blocks = [wrap(d, "body", 14, side_w - 56) for _, _, d in focus]
     side_h = 66 + sum(26 + 21 * len(b) + 18 for b in blocks) + 4

@@ -16,7 +16,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/about-dark.svg" />
-  <img src="./assets/about-light.svg" width="100%" alt="Developer and lifelong learner working on AI / machine learning (XGBoost forecasting, NLP pipelines, CNNs, LLM apps with Gemini), full-stack web (React with Flask, FastAPI or Node and MongoDB) and DevOps (Jenkins pipelines, Docker, zero-downtime Nginx deploys). Currently learning LLM apps, MLOps and cloud." />
+  <img src="./assets/about-light.svg" width="100%" alt="Developer and lifelong learner building AI tools and resilient backends. Works on AI / machine learning (XGBoost forecasting, NLP pipelines, CNNs, LLM apps with Gemini), backend and distributed systems (event-driven services on Spring Boot, Kafka, Redis and PostgreSQL, load-tested with k6), full-stack web (React with Spring Boot, Flask, FastAPI or Node) and DevOps (Jenkins and GitHub Actions pipelines, Docker, zero-downtime deploys, Grafana monitoring). Proud of: zero double bookings at 500 requests per second. Currently learning LLM apps, MLOps and cloud." />
 </picture>
 
 <br/><br/>
