@@ -288,11 +288,13 @@ def toolbox(t, path):
                      ("XGBoost", "#189fdd"), ("NLTK", "#4b8bbe"), ("Pandas", "#e70488"), ("NumPy", "#4dabcf"),
                      ("Gemini API", "#8e75b2"), ("Jupyter", "#f37626")]),
         ("WEB", [("React", "#61dafb"), ("Vite", "#646cff"), ("Tailwind", "#06b6d4"), ("Chakra UI", "#319795"),
-                 ("Node.js", "#5fa04e"), ("Express", "#9aa3b5"), ("Flask", "#9aa3b5"), ("FastAPI", "#009688"),
+                 ("Spring Boot", "#6db33f"), ("Node.js", "#5fa04e"), ("Express", "#9aa3b5"), ("Flask", "#9aa3b5"), ("FastAPI", "#009688"),
                  ("Streamlit", "#ff4b4b"), ("Socket.io", "#9aa3b5")]),
         ("DEVOPS & DATA", [("Docker", "#2496ed"), ("Jenkins", "#d24939"), ("Nginx", "#009639"),
                            ("Maven", "#c71a36"), ("JUnit 5", "#25a162"), ("Git", "#f05032"),
-                           ("GitHub Actions", "#2088ff"), ("MongoDB", "#47a248"), ("Linux", "#fcc624")]),
+                           ("GitHub Actions", "#2088ff"), ("Kafka", "#9aa3b5"), ("Redis", "#dc382d"),
+                           ("PostgreSQL", "#4169e1"), ("MongoDB", "#47a248"), ("Prometheus", "#e6522c"),
+                           ("Grafana", "#f46800"), ("k6", "#7d64ff"), ("Linux", "#fcc624")]),
     ]
     chip_h, gap, row_gap = 32, 8, 10
     avail = W - pad * 2 - label_w
@@ -368,6 +370,11 @@ def outro(t, path):
 
 
 PROJECTS = {
+    "seatbooking": dict(name="Seat Booking System", tag="Backend · Distributed systems",
+                        desc="Event-driven ticket booking with a virtual waiting room and a React front end. "
+                             "Never sells a seat twice, even when 300 users rush the same one, and holds "
+                             "500 requests/s at a 154 ms p95 on a single 4-vCPU machine.",
+                        tech=["Spring Boot", "Kafka", "Redis", "PostgreSQL", "React", "Docker", "k6"]),
     "aqi": dict(name="Adaptive AQI Assistant", tag="AI · Forecasting",
                 desc="Real-time air quality for Delhi: live readings from 14 stations, XGBoost AQI forecasts "
                      "on an interactive map, and personal health advice from Gemini.",
@@ -404,7 +411,7 @@ if __name__ == "__main__":
                                           ("work", "Featured work"), ("activity", "GitHub activity")), 1):
             heading(t, out / f"h-{key}-{mode}.svg", f"0{n}", title)
         for key, p in PROJECTS.items():
-            if key == "alumni":
+            if key in ("seatbooking", "alumni"):
                 project(t, out / f"project-{key}-{mode}.svg", p, 1000)
             else:
                 project(t, out / f"project-{key}-{mode}.svg", p, half_w, half_h)

@@ -28,7 +28,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/toolbox-dark.svg" />
-  <img src="./assets/toolbox-light.svg" width="100%" alt="Languages: Python, Java, JavaScript, TypeScript, HTML & CSS, Bash. AI / ML: TensorFlow, Keras, scikit-learn, XGBoost, NLTK, Pandas, NumPy, Gemini API, Jupyter. Web: React, Vite, Tailwind, Chakra UI, Node.js, Express, Flask, FastAPI, Streamlit, Socket.io. DevOps & data: Docker, Jenkins, Nginx, Maven, JUnit 5, Git, GitHub Actions, MongoDB, Linux." />
+  <img src="./assets/toolbox-light.svg" width="100%" alt="Languages: Python, Java, JavaScript, TypeScript, HTML & CSS, Bash. AI / ML: TensorFlow, Keras, scikit-learn, XGBoost, NLTK, Pandas, NumPy, Gemini API, Jupyter. Web: React, Vite, Tailwind, Chakra UI, Spring Boot, Node.js, Express, Flask, FastAPI, Streamlit, Socket.io. DevOps & data: Docker, Jenkins, Nginx, Maven, JUnit 5, Git, GitHub Actions, Kafka, Redis, PostgreSQL, MongoDB, Prometheus, Grafana, k6, Linux." />
 </picture>
 
 <br/><br/>
@@ -39,6 +39,7 @@
 </picture>
 
 <p>
+  <a href="https://github.com/ayushkzz/seat-booking-system"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-seatbooking-dark.svg" /><img src="./assets/project-seatbooking-light.svg" width="98.6%" alt="Seat Booking System: event-driven ticket booking with a virtual waiting room and a React front end. Never sells a seat twice, even when 300 users rush the same one, and holds 500 requests per second at a 154 ms p95 on a single 4-vCPU machine. Spring Boot, Kafka, Redis, PostgreSQL, React, Docker, k6." /></picture></a>
   <a href="https://github.com/ayushkzz/Adaptive-AQI-Assistant"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-aqi-dark.svg" /><img src="./assets/project-aqi-light.svg" width="49%" alt="Adaptive AQI Assistant: real-time Delhi air quality with XGBoost forecasts, an interactive map and Gemini health advice." /></picture></a>
   <a href="https://github.com/ayushkzz/Pair-Programming"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-pair-dark.svg" /><img src="./assets/project-pair-light.svg" width="49%" alt="AI Pair Programmer Pro: an LLM coding partner that reviews, explains, refactors, finds bugs, writes tests, optimizes and runs code." /></picture></a>
   <a href="https://github.com/ayushkzz/ai-powered-education-feedback"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-edu-dark.svg" /><img src="./assets/project-edu-light.svg" width="49%" alt="AI-Powered Education Feedback: a coding practice platform with a Monaco editor and Phi-2-based feedback." /></picture></a>
